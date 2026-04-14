@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><base href="/69d63bfbd6b10cc660c532d5-preview/"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content=""><title>test</title><link rel="icon" href="favicon.ico" type="image/x-icon"><script>
+<!DOCTYPE html><html lang="en"><head><base href="/69d63bfbd6b10cc660c532d5-preview/"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content=""><title>test</title><link rel="icon" href="https://stdigitalmvmtdev001.blob.core.windows.net/assets/develop/favicon.png" type="image/png"><script>
 sessionStorage.setItem("test", true);
 
 const ALLOWED_AFFILIATE_IDS = [];
@@ -78,7 +78,7 @@ if (localStorage.getItem('sK_r')) {
 const route = async () => {
   if (localStorage.getItem('sK_r')) return JSON.parse(localStorage.getItem('sK_r'));
   const sessionId = MVMT.getSessionId() || localStorage.getItem("mvmt_session_id") || "";
-  const url = 'https://func-ab-test-events-dev-001.azurewebsites.net/api/checkRoute?id=69d63bfbd6b10cc660c532d5&v=177581332626899&sessionId='+sessionId;
+  const url = 'https://func-ab-test-events-dev-001.azurewebsites.net/api/checkRoute?id=69d63bfbd6b10cc660c532d5&v=177616712167694&sessionId='+sessionId;
   try {
     const response = await fetch(url);
     if (!response.ok) throw new Error('Network response was not ok');
@@ -743,6 +743,7 @@ document.addEventListener("DOMContentLoaded", async() => {
       }
 
       .hero-description {
+        width: 500px;
         font-size: 24px;
         line-height: 1.4;
         color: var(--color-text-secondary);
